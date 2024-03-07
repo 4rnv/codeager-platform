@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Codeager</title>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+{% include 'top.html' %}
     <form action="/chapter/{{q_no}}/submit" method="post">
     <label for="answer">{{ question }}</label><br>
     <input type="text" id="answer" name="answer" required><br>
