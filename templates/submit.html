@@ -1,9 +1,0 @@
-{% include 'top.html' %}
-    <form action="/chapter/{{q_no}}/submit" method="post">
-    <label for="answer">{{ question }}</label><br>
-    <input type="text" id="answer" name="answer" required><br>
-    <input type="hidden" name="question_id" value="{{ question_id }}">
-    <input type="submit" value="Submit">
-</form>
-</body>
-</html>

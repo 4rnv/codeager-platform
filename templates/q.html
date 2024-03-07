@@ -1,7 +1,7 @@
 {% include 'top.html' %}
-    <p>{{question}}</p>
-    <form id="answer_form" action="/chapter/{{form_link}}/submit" method="post">
-        <input type="text" id="answer" name="answer" required><br>
+    <form id="answer_form" action="/chapter/{{form_link}}/submit" method="post" class="text-center flex flex-col mx-auto my-0 w-[50%]">
+        <p>{{question}}</p>
+        <input type="text"  class="border-2 rounded-md" id="answer" name="answer" required><br>
         <input type="hidden" name="question_id" value="{{ question_id }}">
         <input type="submit" value="Submit">
     </form>

@@ -48,5 +48,9 @@ def check_ans(q_no):
    else:
       return render_template('result.html', bane = 'Too bad! You\'ve failed', cia = int(q_no), link_msg = 'Try again')
 
+@app.route('/credits/')
+def credits():
+   return render_template('credits.html')
+
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug=True)
