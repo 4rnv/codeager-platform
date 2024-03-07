@@ -3,17 +3,6 @@ from flask import Flask, render_template, jsonify, request, redirect, url_for
 #Use tailwind CDN for the css stuff
 #Add image and quote for each question, mayb use tuple
 
-questions_and_answers = [
-    {"question": "What is the capital of France?", "answer": "Paris"},
-    {"question": "What is 2 + 2?", "answer": "4"},
-    {"question": "What is the largest mammal?", "answer": "Blue whale"},
-    {"question": "What planet is known as the Red Planet?", "answer": "Mars"},
-    {"question": "What is the chemical symbol for gold?", "answer": "Au"},
-    {"question": "Who wrote 'To Kill a Mockingbird'?", "answer": "Harper Lee"},
-    {"question": "What is the hardest natural substance on Earth?", "answer": "Diamond"},
-    {"question": "What is the capital of Italy?", "answer": "Rome"},
-]
-
 app = Flask(__name__)
 
 questions = ["What is the capital of France?",

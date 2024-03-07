@@ -5,15 +5,6 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </head>
 <body>
-    <!-- {% if is_correct is not none %}
-        <p>You were {% if not is_correct %}not{% endif %} correct.</p>
-    {% endif %}
-    <form action="/check_answer" method="post">
-        <label for="answer">{{ question }}</label><br>
-        <input type="text" id="answer" name="answer" required><br>
-        <input type="hidden" name="question_id" value="{{ question_id }}">
-        <input type="submit" value="Submit">
-    </form> -->
     <a href="/chapter/{{question}}">Start your journey</a>
 </body>
 </html>

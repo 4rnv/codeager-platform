@@ -3,14 +3,14 @@
 <head>
     <title>Codeager</title>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <p>{{question}}</p>
-    <!-- <a href="/chapter/{{form_link}}/submit">Click me</a> -->
     <form id="answer_form" action="/chapter/{{form_link}}/submit" method="post">
-        <!-- <label for="answer">{{ question }}</label><br> -->
         <input type="text" id="answer" name="answer" required><br>
         <input type="hidden" name="question_id" value="{{ question_id }}">
         <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
