@@ -1,4 +1,6 @@
 {% include 'top.html' %}
+    <h1 class="quote" id="quote">Part {{episode}}: {{quote}}</h1>
+    <img src="{{image}}" class="mx-auto my-0">
     <form id="answer_form" action="/chapter/{{form_link}}/submit" method="post" class="text-center flex flex-col mx-auto my-0 w-[50%]">
         <p>{{question}}</p>
         <input type="text"  class="border-2 rounded-md" id="answer" name="answer" required><br>
